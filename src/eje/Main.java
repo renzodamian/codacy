@@ -2,8 +2,6 @@ package eje;
 
 import java.net.*;
 import java.io.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import controlador.*;
 import modelo.*;
 import vista.*;
