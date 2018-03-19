@@ -36,16 +36,16 @@ public class User extends javax.swing.JFrame {
     private void initComponents() {
 
         lbl_nombre = new javax.swing.JLabel();
-        txt_nombre = new javax.swing.JTextField();
+        txtnombre = new javax.swing.JTextField();
         lbl_apellido = new javax.swing.JLabel();
-        txt_apellido = new javax.swing.JTextField();
+        txtapellido = new javax.swing.JTextField();
         lbl_cedula = new javax.swing.JLabel();
-        txt_cedula = new javax.swing.JTextField();
+        txtcedula = new javax.swing.JTextField();
         lbl_user = new javax.swing.JLabel();
         lbl_pass = new javax.swing.JLabel();
-        txt_user = new javax.swing.JTextField();
+        txtuser = new javax.swing.JTextField();
         jpass = new javax.swing.JPasswordField();
-        btn_guardar = new javax.swing.JToggleButton();
+        btnguardar = new javax.swing.JToggleButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txta = new javax.swing.JTextArea();
         lblfondo = new javax.swing.JLabel();
@@ -56,32 +56,32 @@ public class User extends javax.swing.JFrame {
         lbl_nombre.setText("NOMBRE");
         getContentPane().add(lbl_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 66, -1, -1));
 
-        txt_nombre.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_nombreKeyTyped(evt);
+                txtnombreKeyTyped(evt);
             }
         });
-        getContentPane().add(txt_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 66, 110, -1));
+        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 66, 110, -1));
 
         lbl_apellido.setText("APELLIDO");
         getContentPane().add(lbl_apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
 
-        txt_apellido.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_apellidoKeyTyped(evt);
+                txtapellidoKeyTyped(evt);
             }
         });
-        getContentPane().add(txt_apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 110, -1));
+        getContentPane().add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 110, -1));
 
         lbl_cedula.setText("CEDULA");
         getContentPane().add(lbl_cedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
 
-        txt_cedula.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtcedula.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_cedulaKeyTyped(evt);
+                txtcedulaKeyTyped(evt);
             }
         });
-        getContentPane().add(txt_cedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 110, -1));
+        getContentPane().add(txtcedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 110, -1));
 
         lbl_user.setText("USER");
         getContentPane().add(lbl_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
@@ -89,12 +89,12 @@ public class User extends javax.swing.JFrame {
         lbl_pass.setText("PASSWORD");
         getContentPane().add(lbl_pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
 
-        txt_user.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtuser.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_userKeyTyped(evt);
+                txtuserKeyTyped(evt);
             }
         });
-        getContentPane().add(txt_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 110, -1));
+        getContentPane().add(txtuser, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 110, -1));
 
         jpass.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -103,8 +103,8 @@ public class User extends javax.swing.JFrame {
         });
         getContentPane().add(jpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, 110, -1));
 
-        btn_guardar.setText("Guardar");
-        getContentPane().add(btn_guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 370, 140, -1));
+        btnguardar.setText("Guardar");
+        getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 370, 140, -1));
 
         txta.setColumns(20);
         txta.setRows(5);
@@ -118,43 +118,43 @@ public class User extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txt_nombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_nombreKeyTyped
+    private void txtnombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnombreKeyTyped
         char c = evt.getKeyChar();
         if ((c < 'a' || c > 'z') && (c < ' ' || c > ' ') && (c < 'A' || c > 'Z')) {
             evt.consume();
         }
         {
         }
-    }//GEN-LAST:event_txt_nombreKeyTyped
+    }//GEN-LAST:event_txtnombreKeyTyped
 
-    private void txt_cedulaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_cedulaKeyTyped
+    private void txtcedulaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcedulaKeyTyped
         int lim = 10;
         char c = evt.getKeyChar();
         if (c < '0' || c > '9') {
             evt.consume();
         }
         {
-            if (txt_cedula.getText().length() >= lim) {
+            if (txtcedula.getText().length() >= lim) {
                 evt.consume();
      
                 JOptionPane.showMessageDialog(rootPane, "Solo 10 digitos");
             }
         }
-    }//GEN-LAST:event_txt_cedulaKeyTyped
+    }//GEN-LAST:event_txtcedulaKeyTyped
 
-    private void txt_apellidoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_apellidoKeyTyped
+    private void txtapellidoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtapellidoKeyTyped
         char c = evt.getKeyChar();
         if ((c < 'a' || c > 'z') && (c < ' ' || c > ' ') && (c < 'A' || c > 'Z')) {
             evt.consume();
         }
-    }//GEN-LAST:event_txt_apellidoKeyTyped
+    }//GEN-LAST:event_txtapellidoKeyTyped
 
-    private void txt_userKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_userKeyTyped
+    private void txtuserKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtuserKeyTyped
         char c = evt.getKeyChar();
         if ((c < 'a' || c > 'z') && (c < ' ' || c > ' ') && (c < 'A' || c > 'Z') && (c < '0' || c > '9')) {
             evt.consume();
         }
-    }//GEN-LAST:event_txt_userKeyTyped
+    }//GEN-LAST:event_txtuserKeyTyped
 
     private void jpassKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jpassKeyTyped
         char c = evt.getKeyChar();
@@ -199,7 +199,7 @@ public class User extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JToggleButton btn_guardar;
+    public javax.swing.JToggleButton btnguardar;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JPasswordField jpass;
     private javax.swing.JLabel lbl_apellido;
@@ -208,10 +208,10 @@ public class User extends javax.swing.JFrame {
     private javax.swing.JLabel lbl_pass;
     private javax.swing.JLabel lbl_user;
     private javax.swing.JLabel lblfondo;
-    public javax.swing.JTextField txt_apellido;
-    public javax.swing.JTextField txt_cedula;
-    public javax.swing.JTextField txt_nombre;
-    public javax.swing.JTextField txt_user;
     public static javax.swing.JTextArea txta;
+    public javax.swing.JTextField txtapellido;
+    public javax.swing.JTextField txtcedula;
+    public javax.swing.JTextField txtnombre;
+    public javax.swing.JTextField txtuser;
     // End of variables declaration//GEN-END:variables
 }

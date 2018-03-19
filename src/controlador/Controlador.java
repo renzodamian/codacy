@@ -25,27 +25,27 @@ public class Controlador implements ActionListener, Observer {
     public Controlador(User obj1, EstudianteDAO obj2) {
         this.obj1 = obj1;
         this.obj2 = obj2;
-        this.obj1.btn_guardar.addActionListener(this);
+        this.obj1.btnguardar.addActionListener(this);
     }
 
     public void limpiar() {
-        obj1.txt_nombre.setText(null);
-        obj1.txt_apellido.setText(null);
-        obj1.txt_cedula.setText(null);
-        obj1.txt_user.setText(null);
+        obj1.txtnombre.setText(null);
+        obj1.txtapellido.setText(null);
+        obj1.txtcedula.setText(null);
+        obj1.txtuser.setText(null);
         obj1.jpass.setText(null);
     }
 
     public void actionPerformed(ActionEvent e) {
         //String pasc;
-        if (e.getSource() == obj1.btn_guardar) {
-            String nombre = obj1.txt_nombre.getText();
+        if (e.getSource() == obj1.btnguardar) {
+            String nombre = obj1.txtnombre.getText();
 
-            String apellido = obj1.txt_apellido.getText();
+            String apellido = obj1.txtapellido.getText();
 
-            String cedula = obj1.txt_cedula.getText();
+            String cedula = obj1.txtcedula.getText();
 
-            String user = obj1.txt_user.getText();
+            String user = obj1.txtuser.getText();
 
             String pass = obj1.jpass.getText();
 
